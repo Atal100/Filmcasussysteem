@@ -44,7 +44,7 @@ module.exports = {
             })
     },
     updateMovie(req, res, next) {
-        const movieId = req.params.movieId
+        const movieId = req.params.id
         const newbody = req.body
 
         Movie.update(newbody)
@@ -59,7 +59,7 @@ module.exports = {
     },
 
     deleteMovie(req, res, next) {
-        const moviesId = req.body.id
+        const moviesId = req.params.id
 
         Movie.findOneAndDelete({ _id: moviesId })
             .then(() => res.status(200).json({
