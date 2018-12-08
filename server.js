@@ -44,9 +44,9 @@ app.use(morgan('dev'))
 }
 
 // on shutdown disconnect from neo4j db
-process.on('exit', function () {
-    neo.driver.close();
-})
+// process.on('exit', function () {
+//     neo.driver.close();
+// })
 
 // Routes
 app.use('/api', hallsRoutes)
