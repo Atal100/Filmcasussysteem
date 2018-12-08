@@ -1,0 +1,25 @@
+{
+  "name": "filmcasussysteem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atal100/Filmcasussysteem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atal100/Filmcasussysteem/issues"
+  },
+  "homepage": "https://github.com/Atal100/Filmcasussysteem#readme"
+}
