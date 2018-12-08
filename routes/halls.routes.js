@@ -1,4 +1,4 @@
-const halls_controller = require('../controller/halls.controller.js');
+const halls_controller = require('../controllers/halls.controller.js');
 const express = require('express');
 const router = express.Router();
 
