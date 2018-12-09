@@ -10,4 +10,8 @@ const MoviescreeningSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Halls'
     }
-})
+});
+
+const Moviescreening = mongoose.model('Moviescreening', MoviescreeningSchema);
+
+module.exports = Moviescreening;

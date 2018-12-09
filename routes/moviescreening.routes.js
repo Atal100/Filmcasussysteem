@@ -1,11 +1,11 @@
-const movie_controller = require('../controllers/movie.controller.js');
+const movie_controller = require('../controllers/moviescreening.controller.js');
 const express = require('express');
 const router = express.Router();
 
-router.get('/movies/:id/', movie_controller.getMovie)
-router.get('/movies/', movie_controller.getAllMovies)
-router.post('/movies/', movie_controller.createMovie)
-router.delete('/movies/:id', movie_controller.deleteMovie)
-router.update('/movies/:id', movie_controller.updateMovie)
+router.get('/moviescreenings/:id/', movie_controller.getmovieScreening)
+router.get('/moviescreenings/', movie_controller.getallMoviesScreenings)
+router.post('/moviescreenings/', movie_controller.createmovieScreening)
+router.delete('/moviescreenings/:id', movie_controller.deletemovieScreening)
+router.put('/moviescreenings/:id', movie_controller.updatemovieScreening)
 
 module.exports = router;

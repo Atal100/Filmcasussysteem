@@ -9,7 +9,7 @@ const MovieSchema = new Schema({
     },
     time: {
         type: String,
-        required: [ture, 'Time is required.']
+        required: [true, 'Time is required.']
     },
     language: {
         type: String,
@@ -19,13 +19,13 @@ const MovieSchema = new Schema({
         type: String,
         required: [true, 'Description is required.']
     },
-    genre: [{
+    genre: {
         type: String,
         required: [true, 'Genre is required.']
-    }]
+    }
 
 
 });
-const Movies = mongoose.model('movies', MovieSchema);
+const Movies = mongoose.model('Movies', MovieSchema);
 
 module.exports = Movies;
