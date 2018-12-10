@@ -8,11 +8,15 @@ const MovieSchema = new Schema({
         unique: true
     },
     time: {
-        type: String,
+        type: Number,
+        trim: true,
+        min: [60, "Movie needs to be longer"],
+        max: [300,"There is no movie longer than this"], 
         required: [true, 'Time is required.']
     },
     language: {
         type: String,
+        trim: true,
         required: [true, 'Language is required.']
     },
     description: {
@@ -21,6 +25,7 @@ const MovieSchema = new Schema({
     },
     genre: {
         type: String,
+        trim: true,
         required: [true, 'Genre is required.']
     }
 

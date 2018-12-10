@@ -1,4 +1,6 @@
-const Movie = require('../models/Movies')
+const Movie = require('../models/Movies');
+const Error = require("../models/ApiError");
+
 
 module.exports = {
     createMovie(req, res, next) {

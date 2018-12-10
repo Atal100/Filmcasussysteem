@@ -1,4 +1,6 @@
-const Halls = require('../models/Halls')
+const Halls = require('../models/Halls');
+const Error = require("../models/ApiError");
+
 
 module.exports = {
     createHall(req, res, next) {

@@ -1,4 +1,6 @@
-const movieScreening = require('../models/Moviescreening.js')
+const movieScreening = require('../models/Moviescreening.js');
+const Error = require("../models/ApiError");
+
 
 module.exports = {
     createmovieScreening(req, res, next) {

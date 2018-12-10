@@ -4,11 +4,14 @@ const Schema = mongoose.Schema
 const MoviescreeningSchema = new Schema({
     movies: {
         type: Schema.Types.ObjectId,
-        ref: 'Movie'
+        ref: 'Movie',
+        unique: true
     },
     halls: {
         type: Schema.Types.ObjectId,
-        ref: 'Halls'
+        ref: 'Halls' ,
+        unique: true
+
     }
 });
 
