@@ -7,7 +7,6 @@
     "test": "test"
   },
   "dependencies": {
-    "@angular/cli": "^7.1.2",
     "jwt-simple": "^0.5.5",
     "node-modules": "^1.0.1"
   },
