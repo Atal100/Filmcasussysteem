@@ -9,6 +9,7 @@ const mongoose = require('mongoose')
 const hallsRoutes = require('./routes/halls.routes')
 const moviesRoutes = require('./routes/movies.routes')
 const moviescreeningRoutes = require('./routes/moviescreening.routes')
+const userRoutes = require('./routes/authentication.routes')
 
 
 const ApiError = require('./models/ApiError')
@@ -52,6 +53,7 @@ app.use(morgan('dev'))
 app.use('/api', hallsRoutes)
 app.use('/api', moviesRoutes)
 app.use('/api', moviescreeningRoutes)
+app.use('/api', userRoutes)
 
 // Postprocessing; catch all non-existing endpoint requests
 app.use('*', function (req, res, next) {
